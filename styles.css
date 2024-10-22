@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #45B39D;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+.title {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #C70039;
+}
+
+.title__span {
+    font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+.content{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    gap: 40px;
+}
+.tetris{
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 2px;
+    width: 100%;
+    min-height: 500px;
+    background-color: #2a2a2a;
+    max-width: 400px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 5px solid #c6e7e1;
+    padding: 10px 40px;
+}
+.block{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-color: #45B39D;
+}
+.block.fill{
+    background-color: #FF5733;
+}
